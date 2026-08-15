@@ -1,8 +1,9 @@
-# affner.dev — sitio minimal (GitHub Pages)
+# affner.dev — portafolio estático (GitHub Pages)
 
 ## Archivos incluidos
-- `index.html` — portada minimal con título, subtítulo y enlaces.
-- `styles.css` — estilos oscuros y responsivos.
+- `index.html` — portafolio de una página: presentación, perfil, proyectos, stack y contacto.
+- `styles.css` — diseño responsive, animaciones y soporte para `prefers-reduced-motion`.
+- `script.js` — menú móvil, copiar correo, animaciones de entrada y proyectos desde la API pública de GitHub.
 - `404.html` — página 404 simple.
 - `robots.txt` — permitir indexación.
 - `CNAME` — define el dominio canónico `www.affner.dev` (ajústalo si decides usar el root `affner.dev`).
@@ -17,6 +18,8 @@
      —o—
      (Apex directo) añade A records del root a `185.199.108.153 / 109.153 / 110.153 / 111.153`.
 
-## Edita
-- Cambia los enlaces (LinkedIn, CV, Email) dentro de `index.html`.
-- Puedes quitar Google Fonts si quieres zero-external; el stack del sistema sigue funcionando.
+## Personaliza
+- Cambia `hello@affner.dev` en `index.html` por tu correo definitivo si usas otro.
+- La sección de proyectos toma los repositorios `ConsultaSismos`, `SoapToRestIntegration` y `monsterdam-microservices` de `github.com/affner`. Puedes editar el arreglo `featuredRepositories` en `script.js` para destacar otros.
+- Si GitHub no está disponible, se muestran las tarjetas de respaldo definidas dentro de `script.js`; la página nunca queda vacía.
+- Puedes quitar Google Fonts si buscas cero dependencias externas: el stack del sistema seguirá funcionando.

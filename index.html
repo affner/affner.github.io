@@ -3,40 +3,128 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>affner.dev — Java backend · datos</title>
-    <meta name="description" content="Landing minimalista de affner.dev: Java backend, datos y performance.">
-    <meta property="og:title" content="affner.dev">
-    <meta property="og:description" content="Java backend · datos · performance">
+    <meta name="description" content="Abner Mendoza — Senior Software Engineer especializado en Java, arquitectura backend, datos e interfaces web.">
+    <meta name="theme-color" content="#0a0d12">
+    <meta property="og:title" content="affner.dev — Abner Mendoza">
+    <meta property="og:description" content="Java · arquitectura backend · datos · web">
     <meta property="og:type" content="website">
-    <meta property="theme-color" content="#0b0b0c">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='black'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='58' fill='white' font-family='Inter, Arial, Helvetica, sans-serif'%3Ea%3C/text%3E%3C/svg%3E">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://www.affner.dev">
+    <title>affner.dev — Java, arquitectura y web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0d12'/%3E%3Cpath d='M22 74 50 20l28 54M33 54h34' fill='none' stroke='%23c7ff59' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="hero" role="main">
-      <h1>affner.dev</h1>
-      <p class="tag">Java backend · datos · performance</p>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="page-glow glow-one" aria-hidden="true"></div>
+    <div class="page-glow glow-two" aria-hidden="true"></div>
 
-      <nav class="links" aria-label="Enlaces principales">
-        <a href="https://github.com/affner" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:hello@affner.dev">Email</a>
-        <a href="#" target="_blank" rel="noopener">CV</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="affner.dev, volver al inicio">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 50 32 8l24 42M19 33h26"/></svg>
+        <span>affner<span class="brand-dot">.</span>dev</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Abrir menú</span><i></i><i></i>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#stack">Stack</a>
+        <a class="nav-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
       </nav>
+    </header>
 
-      <p class="bio">
-        Construyo servicios y pipelines en <strong>Java/Spring</strong> con enfoque en <em>robustez, rendimiento y datos</em>.
-        Esta es una portada minimalista — pronto más.
-      </p>
+    <main id="contenido">
+      <section id="inicio" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse-dot"></span> Disponible para colaborar</p>
+          <h1>Diseño sistemas que <em>resisten</em> el mundo real.</h1>
+          <p class="hero-lede">Soy <strong>Abner Mendoza</strong>, Senior Software Engineer. Construyo productos confiables desde servicios Java bien pensados hasta experiencias web claras y rápidas.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+            <button class="text-button" type="button" data-copy-email="hello@affner.dev">Copiar email <span aria-hidden="true">⧉</span></button>
+          </div>
+          <p class="copy-status" aria-live="polite"></p>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Visualización decorativa de arquitectura de software">
+          <div class="visual-label">SYSTEM / 01</div>
+          <div class="visual-window">
+            <div class="window-bar"><span></span><span></span><span></span><b>architecture.java</b></div>
+            <svg class="architecture" viewBox="0 0 540 410" role="img" aria-label="Diagrama de servicios conectados">
+              <defs>
+                <linearGradient id="nodeFill" x1="0" x2="1"><stop stop-color="#c7ff59"/><stop offset="1" stop-color="#76d8ff"/></linearGradient>
+                <filter id="softGlow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <g class="connection-lines"><path d="M128 120 270 205 410 112M270 205v106M128 120v190l142-105M410 112v198l-140-105"/></g>
+              <g class="connection-dots"><circle cx="128" cy="120" r="5"/><circle cx="410" cy="112" r="5"/><circle cx="270" cy="205" r="6"/><circle cx="128" cy="310" r="5"/><circle cx="410" cy="310" r="5"/><circle cx="270" cy="311" r="5"/></g>
+              <g class="service-node primary" filter="url(#softGlow)"><rect x="215" y="165" width="110" height="80" rx="11"/><path d="M246 193h48M246 207h31M246 221h42"/><text x="270" y="151">CORE</text></g>
+              <g class="service-node"><rect x="68" y="84" width="120" height="68" rx="10"/><path d="M96 111h64M96 125h43"/><text x="128" y="72">API</text></g>
+              <g class="service-node"><rect x="350" y="76" width="120" height="68" rx="10"/><path d="M378 103h64M378 117h43"/><text x="410" y="64">DATA</text></g>
+              <g class="service-node"><rect x="68" y="275" width="120" height="68" rx="10"/><path d="M96 302h64M96 316h43"/><text x="128" y="263">WEB</text></g>
+              <g class="service-node"><rect x="350" y="275" width="120" height="68" rx="10"/><path d="M378 302h64M378 316h43"/><text x="410" y="263">QUEUE</text></g>
+            </svg>
+            <p class="terminal-line"><span>›</span> build reliable things<span class="cursor">_</span></p>
+          </div>
+          <div class="orbit orbit-a" aria-hidden="true"></div><div class="orbit orbit-b" aria-hidden="true"></div>
+        </div>
+
+        <a class="scroll-cue" href="#perfil"><span></span> explorar</a>
+      </section>
+
+      <section id="perfil" class="profile section-shell section-rule">
+        <div class="section-kicker reveal"><span>01</span> PERFIL</div>
+        <div class="profile-grid">
+          <h2 class="reveal">El backend es el motor.<br>La experiencia también importa.</h2>
+          <div class="profile-text reveal">
+            <p>Me gusta bajar problemas complejos a sistemas legibles: contratos claros, datos que fluyen y decisiones técnicas que se sostienen con el tiempo.</p>
+            <p>Mi enfoque combina arquitectura Java, integración de APIs y una creciente obsesión por el front-end: interfaces con intención, no sólo pantallas.</p>
+            <a class="inline-link" href="https://github.com/affner" target="_blank" rel="noopener">Conocer mi código en GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="principles reveal">
+          <article><span>01</span><h3>Intencional</h3><p>Arquitectura al servicio del problema, sin complejidad decorativa.</p></article>
+          <article><span>02</span><h3>Observable</h3><p>Sistemas que pueden explicarse, medirse y evolucionar.</p></article>
+          <article><span>03</span><h3>Humano</h3><p>Experiencias digitales que respetan el tiempo de quien las usa.</p></article>
+        </div>
+      </section>
+
+      <section id="proyectos" class="projects section-shell section-rule">
+        <div class="section-heading reveal"><div class="section-kicker"><span>02</span> PROYECTOS</div><p>Una selección viva desde GitHub. Cada repositorio cuenta una parte del proceso.</p></div>
+        <div id="project-grid" class="project-grid" aria-live="polite">
+          <div class="project-skeleton"></div><div class="project-skeleton"></div><div class="project-skeleton"></div>
+        </div>
+        <div class="projects-footer reveal"><a class="inline-link" href="https://github.com/affner?tab=repositories" target="_blank" rel="noopener">Todos los repositorios <span aria-hidden="true">↗</span></a><span id="github-state">Conectando con GitHub…</span></div>
+      </section>
+
+      <section id="stack" class="stack section-shell section-rule">
+        <div class="section-kicker reveal"><span>03</span> STACK &amp; FOCO</div>
+        <div class="stack-layout">
+          <h2 class="reveal">Tecnología con<br><em>propósito.</em></h2>
+          <div class="stack-groups reveal">
+            <div><p class="stack-label">BACKEND</p><ul><li>Java</li><li>Spring Boot</li><li>REST / SOAP</li><li>Arquitectura de servicios</li></ul></div>
+            <div><p class="stack-label">DATOS &amp; PLATAFORMA</p><ul><li>SQL</li><li>Integraciones</li><li>APIs externas</li><li>Performance</li></ul></div>
+            <div><p class="stack-label">WEB</p><ul><li>HTML semántico</li><li>CSS moderno</li><li>JavaScript</li><li>UX de producto</li></ul></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact section-shell">
+        <div class="contact-grid reveal">
+          <p class="eyebrow">¿TIENES UNA IDEA O UN RETO?</p>
+          <h2>Hagamos que<br>funcione <em>bien.</em></h2>
+          <div><p>Estoy abierto a conversar sobre productos, integraciones complejas y equipos que valoran hacer las cosas con criterio.</p><a class="button button-primary" href="mailto:hello@affner.dev">hello@affner.dev <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <small>© <span id="y"></span> affner.dev</small>
-    </footer>
+    <footer class="site-footer section-shell"><span>© <span id="year"></span> ABNER MENDOZA</span><span>HECHO CON CÓDIGO Y CAFÉ</span><a href="#inicio">VOLVER ARRIBA ↑</a></footer>
 
-    <script>
-      document.getElementById('y').textContent = new Date().getFullYear();
-    </script>
+    <template id="project-template"><a class="project-card" target="_blank" rel="noopener"><div class="project-top"><span class="project-index"></span><span class="project-arrow">↗</span></div><div><p class="project-language"></p><h3></h3><p class="project-description"></p></div><div class="project-meta"><span class="project-updated"></span><span>Ver repositorio</span></div></a></template>
+    <script src="script.js"></script>
   </body>
 </html>
